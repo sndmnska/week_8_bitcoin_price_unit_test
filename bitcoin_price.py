@@ -33,7 +33,7 @@ def main():
             rate = convert_string_to_float(rate)
             number_of_bitcoin = convert_string_to_float(number_of_bitcoin)
             total = calculate_bitcoin_total(rate, number_of_bitcoin)
-            print_total_rate(total)
+            print_total(total)
 
     
 
@@ -44,7 +44,7 @@ def print_current_rate(rate):
 def calculate_bitcoin_total(rate, user_bitcoin):
     return rate * user_bitcoin
 
-def print_total_rate(total):
+def print_total(total):
     print(f'The total amount of USD you have in bitcoin is ${total}')
 
 def convert_string_to_float(str):
@@ -69,3 +69,5 @@ def get_rate_from_api_response(response): # error handling - pass / fail what ha
 
 if __name__ == '__main__':
     main()
+
+    
